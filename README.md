@@ -21,9 +21,10 @@ Product_Category_2| Product may belongs to other category also (Masked)
 Product_Category_3| Product may belongs to other category also (Masked)
 Purchase | Purchase Amount (Target Variable)
 
-## Approach
-The problem involves predicting the purchase amount for the various products, regression based machine learning techniques have to be used. A combination of XGBoost and CatBoost models performed better than standalone models and was used to predict the final values. 
-
 ## Evaluation Metric
 The evaluation metric used is **root mean squared error** (RMSE). 
+
+## Approach
+The solution to the problem involves predicting the purchase amount for the various products, regressor models have to be used. Out of the three models tested, XGBoost and CatBoost models have identical RMSE of ~2441 and R-squared values of ~0.75 and perform better than LightGBM. Therefore, combination of XGBoost and CatBoost regressors is used to predict the values of purchase amount.   
+ 
 
